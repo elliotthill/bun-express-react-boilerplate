@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npm-run-all --parallel watch:server",
-    "watch:server": "bun  bin/www.ts --watch \"./client/dist\"",
+    "watch:server": "bun --watch bin/www.ts",
     "test": "jest",
     "watch:tsc": "tsc -w"
   },
