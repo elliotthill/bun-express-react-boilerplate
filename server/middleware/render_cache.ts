@@ -37,7 +37,7 @@ class RenderCache {
 
     middleware = async (req: Request,res: Response, next: NextFunction) => {
 
-        if (req.query.nocache || env.NODE_ENV === "development") {
+        if (req.query.nocache) {
             next();
             return;
         }
